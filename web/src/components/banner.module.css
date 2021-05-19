@@ -1,0 +1,11 @@
+@import '../styles/custom-media.css';
+@import '../styles/custom-properties.css';
+
+.mainBanner{
+background: #33bec3;
+}
+
+.mainBanner p{
+    color: #ffffff;
+    font-size: 2rem;
+}

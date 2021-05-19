@@ -6,6 +6,7 @@ import {
   mapEdgesToNodes,
 } from "../lib/helpers";
 import BlogPostPreviewList from "../components/blog-post-preview-list";
+import Banner from "../components/banner";
 import Container from "../components/container";
 import GraphQLErrorList from "../components/graphql-error-list";
 import SEO from "../components/seo";
@@ -96,6 +97,7 @@ const IndexPage = (props) => {
         keywords={site.keywords}
       />
       <Container>
+        <Banner></Banner>
         <h1 hidden>Welcome to {site.title}</h1>
         {postNodes && (
           <BlogPostPreviewList
