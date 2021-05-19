@@ -8,6 +8,7 @@ import {
 import BlogPostPreviewList from "../components/blog-post-preview-list";
 import Banner from "../components/banner";
 import Container from "../components/container";
+import FullContainer from "../components/container-fullwidth";
 import GraphQLErrorList from "../components/graphql-error-list";
 import SEO from "../components/seo";
 import Layout from "../containers/layout";
@@ -96,8 +97,10 @@ const IndexPage = (props) => {
         description={site.description}
         keywords={site.keywords}
       />
+      <FullContainer>
+      <Banner title="My Fab Title"></Banner>
+      </FullContainer>
       <Container>
-        <Banner></Banner>
         <h1 hidden>Welcome to {site.title}</h1>
         {postNodes && (
           <BlogPostPreviewList

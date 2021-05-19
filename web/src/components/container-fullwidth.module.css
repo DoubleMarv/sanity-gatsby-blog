@@ -1,0 +1,11 @@
+@import '../styles/custom-media.css';
+
+.root {
+  box-sizing: border-box;
+  max-width: 100%;
+  margin: 0 auto;
+
+  @media (--media-min-small) {
+    padding: 2em;
+  }
+}
